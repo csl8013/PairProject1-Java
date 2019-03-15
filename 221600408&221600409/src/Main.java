@@ -3,6 +3,7 @@ public class Main {
         if(args.length == 0){
             throw new IllegalArgumentException();
         }
+
         lib lib = new lib();
         lib.path += args[0];
         lib.countChars();
