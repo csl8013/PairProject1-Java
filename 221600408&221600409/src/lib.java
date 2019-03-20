@@ -6,8 +6,8 @@ import java.util.regex.Pattern;
 public class lib {
     public static int countLines,countChars,countWords;
     public static String fileContent = new String();
-    public static String path = "C:\\Users\\win\\IdeaProjects\\WordCount\\src\\test\\";
-    public static String path2 = "C:\\Users\\win\\IdeaProjects\\WordCount\\src\\test\\result.txt";
+    public static String path;
+    public static String path2 = "result.txt";
     public static TreeMap<String, Integer> records = new TreeMap<>();
     public static LinkedList<String> wordList = new LinkedList<>();
     public static LinkedList<String> hotWordList = new LinkedList<>();
