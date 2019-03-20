@@ -5,7 +5,7 @@ public class Main {
         }
 
         lib lib = new lib();
-        lib.path += args[0];
+        lib.path = args[0];
         lib.countChars();
         lib.countLines();
         lib.countWords();
