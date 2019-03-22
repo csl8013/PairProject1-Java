@@ -12,7 +12,7 @@ public class lib {
     public static LinkedList<String> wordList = new LinkedList<>();
     public static LinkedList<String> hotWordList = new LinkedList<>();
 
-    //将统计结果写入result文本
+
     public static void writeFile()throws Exception{
         File file = new File(path2);
         if(!file.exists()){
@@ -29,7 +29,7 @@ public class lib {
         bw.write(sb.toString());
         bw.close();
     }
-    //对统计完的单词进行排序
+
     public static void sortWord(){
         List<Map.Entry<String, Integer>> list = new ArrayList<>(records.entrySet());
         Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
@@ -44,7 +44,7 @@ public class lib {
             wordList.add(str);
         }
     }
-    //统计字符数
+
     public static void countChars()throws Exception{
         countChars = 0;
         File file = new File(path);
@@ -64,7 +64,7 @@ public class lib {
         br.close();
         fileContent = sbf.toString().toLowerCase();
     }
-    //统计有效行数
+
     public static void countLines()throws Exception{
         countLines = 0;
         String regex = "\\s*";
@@ -78,7 +78,7 @@ public class lib {
         }
         br.close();
     }
-    //统计单词数
+
     public static void countWords(){
         countWords = 0;
         Pattern expression = Pattern.compile("[a-z]{4,}[a-z0-9]*");
@@ -95,7 +95,7 @@ public class lib {
             }
         }
     }
-    //统计热门单词数
+
     public static void countHotWords(){
         sortWord();
         String str;
